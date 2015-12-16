@@ -1,0 +1,19 @@
+application: htpp
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /js
+  static_dir: js
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /templates
+  static_dir: templates
+- url: /icon
+  static_dir: icon
+- url: /login/.*
+  script: _go_app
+  secure: always
+- url: /.*
+  script: _go_app

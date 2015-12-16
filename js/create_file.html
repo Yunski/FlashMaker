@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Flash Maker</title>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+        <body>
+            <div id="login-home">
+                <form action={{if .LoggedIn}} "/logout" {{else}} "/loginForm" {{end}}
+                    method="get" >
+                    <input type="submit" value=
+                        {{if .LoggedIn}} "Logout" {{else}} "Login" {{end}}>
+                    </input>
+                </form>
+            </div>
+            <div class = "header">
+                <h1>Flash Maker</h1>
+            </div>
+            <div id = "quizlet-link">
+                <a href="https://quizlet.com/"><b>Powered by Quizlet.com</b></a>
+            </div>
+            <div id = "user">
+                <h1>Logged in as {{.User.UserName}}</h1>
+            </div>
+            <div id = "upload">
+                <form action="/define_file" enctype="multipart/form-data" method="post" >
+                    <input id = "file" type="file" name="img" accept="image/*">
+                    <input class="button" type="submit" value="Submit">
+                </form>
+            </div>
+        </body>
+    </head>
+</html>

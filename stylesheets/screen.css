@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,700italic,400,400italic);
+
+body{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /*background-color: #8D8487;*/
+    background-color: #7199D3;
+}
+
+#page{ margin: 0; padding: 0; }
+#content{ max-width: 990px; margin: 0 auto; position: relative; }
+
+header{ background-color: white; position: relative; }
+
+header h1{
+    margin: 0;
+    padding: 1.0em;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5.0em;
+    font-weight: 700;
+    /*color: #FF6C0C;*/
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+header a:hover{ color: black; }
+h1{ font-size: 3.0em; margin: 0 0 0.7em 0; text-align: center; }
+p{ margin: 0 0 0.75em 0; }
+a{ text-decoration: none; color: #444444; }
+
+footer{ font-size: 1.5em; padding: 1.0em; text-align: center; position: relative }
+
+.white-back{
+    background-color: white;
+    color: #444444;
+}
+
+#login-home{ position: absolute; top: 1.0em; right: 1.0em; }
+#login-home form{ margin: 0; padding: 0; }
+#login-home input {
+    outline: none;
+    background-color: white;
+    color: #7199D3;
+    border: 0.1em solid #7199D3;
+    font-size: 2.5em;
+}
+
+#login-home input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.2em #7199D3;
+    transform: scale(1.05);
+}
+
+#user{
+    position: absolute;
+    top: 13.0em;
+    right: 2.7em;
+    font-size: 0.35em;
+    color: #7199D3;
+}
+
+nav.nav-site{
+    font-size: 1.5em;
+    position: absolute;
+    top: 1.0em;
+    right: 7.0em;
+}
+
+nav.nav-site li{ list-style: none; float: left; }
+nav.nav-site li a{display: block; padding: 0 1.0em 0 1.0em; color: #444444; }
+nav.nav-site li a:hover{ color: black; transform: scale(1.05); }
+
+nav.nav-bar {
+    background-color: #444444;
+    display: inline-block;
+    position: fixed;
+    top: 1.0em;
+    left: 0;
+}
+
+nav.nav-bar li{ list-style: none; }
+
+nav.nav-bar li a{
+    display: block;
+    color: #EEEEEE;
+    padding: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav.nav-bar .current a {
+    background-color: black;
+    color: white;
+    padding-top: 2.0em;
+    padding-bottom: 2.0em;
+}
+
+#welcome{ padding: 2.0em 1.0em 2.0em 1.0em; }
+#about{ padding: 2.0em 1.0em 2.0em 1.0em; }
+#contact{ padding: 2.0em 1.0em 2.0em 1.0em; }
+#acknowledge{ padding: 2.0em 1.0em 2.0em 1.0em; }
+
+#social-links{ margin: 0 auto; text-align: center; }
+#social-links a{ text-decoration: none; padding: 3.5em; }
+#social-links a img{ max-width: 10.0em; width: 10.0em; height: auto; }
+#social-links a img:hover{ transform: scale(1.2); }
+
+#quizlet-link{ padding-top: 1.0em; padding-bottom: 1.0em; text-align: center; }
+#quizlet-link a{ text-decoration: none; font-size: 1.0em; color: white; }
+#quizlet-link a:hover{ text-shadow: 0 0 0.1em white; }
+
+/*login page */
+#login-form { padding: 5.0em 0 5.0em 0; }
+
+#login-form form { max-width: 600px; margin: 0 auto; }
+
+#login-form form label span { font-size: 2.0em; color: white; }
+
+#login-form form input {
+    padding: 0.5em;
+    width: 100%;
+    outline: none;
+    border: 0.1em solid white;
+    border-radius: 0.1em;
+    background-color: #7199D3;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#login-form form input:focus{ outline: none; box-shadow: 0 0 1.0em white; }
+#loading {
+    display: none;
+    position: static;
+    margin: 0 auto;
+    width: 4.0em;
+    height: 4.0em;
+    background: url("/icon/loader.gif") no-repeat center center;
+}
+
+#alert{ text-align: center; display: none; color: white; padding: 0.3em; }
+#resp-url{ text-align: center; display: none; }
+#resp-link{ color: white; text-decoration: underline; font-size: 2.5em; }
+#new-set{ margin: 1.0em auto; text-align: center; display: none; }
+#new-set a{ text-decoration: none; color: white; font-size: 1.5em; }
+#new-set a:hover{ color: #444444; }
+
+#upload form { max-width: 940px; margin: 0 auto; }
+
+#upload form input {
+    padding: 0.5em;
+    width: 100%;
+    outline: none;
+    border: 0.1em solid white;
+    background-color: #7199D3;
+    color: white;
+}
+
+#upload form textarea { border: 0.1em solid #444444; }
+
+#upload form input:focus{ outline: none; box-shadow: 0 0 20px white; }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #999999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #999999;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #999999;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #999999;
+}
+::-webkit-file-upload-button, button { background-color: white; color: 7199D3; }
+
+#title{
+    height: 1.8em;
+    width: 100%;
+    padding: 0.2em;
+    font-size: 1.5em;
+    color: #444444;
+    margin: 0.5em auto 0 auto;
+    overflow: hidden;
+}
+#wordbox{
+    height: 12.0em;
+    width: 100%;
+    padding: 0.2em;
+    font-size: 1.5em;
+    color: #444444;
+    display: block;
+    margin: 0.5em auto 0.5em auto;
+    overflow:auto;
+}
+
+#file{ font-size: 1.2em; margin-bottom: 1.0em; }
+#submit{ font-size: 2.5em; }
+
+.button{ display: block; margin: 0 auto; cursor: pointer; }
+
+.button:hover { box-shadow: 0 0 0.5em white; transform: scale(1.02); }
+
+/* screens */
+@media screen and (max-width: 1470px) {
+    header h1{ font-size: 4.0em; }
+    h1{ font-size: 2em; }
+    #content{ max-width: 900px; }
+    nav.nav-site li a{ font-size: 0.9em; padding: 0 0.8em 0 0.8em; }
+    nav.nav-bar li a{ font-size: 0.8em; }
+}
+
+@media screen and (max-width: 1282px) {
+    nav.nav-site{ left: 0; }
+    nav.nav-bar{ display: none; }
+}
+
+@media screen and (max-width: 900px) {
+    nav.nav-site{ font-size: 2.0em; position: static; width: 100%; }
+    nav.nav-site li{ float: none; text-align: center; }
+    nav.nav-site li a{
+        display: block;
+        padding: 1.5em;
+        color: white;
+        background-color: #444444;
+        border: 0.1em solid white;
+    }
+    nav.nav-site li a:hover{ background-color: black; color: white; }
+    nav.nav-bar{ display: none; }
+    #login-home{ position: static; }
+    #login-home input {
+        display: block;
+        width: 100%;
+        padding: 1.5em;
+        font-size: 2.0em;
+        color: white;
+        background-color: #444444;
+        border: 0.1em solid white;
+    }
+    #login-home input:hover { background-color: black; }
+    #social-links a { padding: 2.0em; }
+    #social-links a img{ max-width: 9.0em; }
+    #login-form { padding: 3.0em 0 3.0em 0; }
+    #login-form form input { font-size: 2.0em; }
+    #login-form form label span { font-size: 1.5em; }
+}
+
+@media screen and (max-width: 700px) {
+    #social-links a { display: block; padding: 1.5em;}
+    #social-links a img{ max-width: 12.0em; width: 12.0em; }
+}
+
+@media screen and (max-width: 625px) {
+    header h1{ font-size: 3.0em; }
+}
+
+@media screen and (max-width: 474px) {
+    header h1{ padding-left: 0.3em; padding-right: 0.3em; }
+    #social-links a { padding: 1.0em;}
+    #social-links a img{ max-width: 10.0em; width: 10.0em; }
+    #quizlet-link{ padding-top: 0.3em; padding-bottom: 0.3em; }
+    #quizlet-link a{ font-size: 0.7em; }
+}
+
+@media screen and (max-width: 414px) {
+    header h1{ font-size: 2.5em; }
+    h1{ font-size: 1.5em; }
+    p{ font-size: 0.8em; }
+    nav.nav-site li a{ padding: 0.8em; }
+    #login-home input { padding: 0.8em; }
+}
+
+@media screen and (max-width: 414px) {
+    header h1{ font-size: 2.2em; }
+}

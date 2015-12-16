@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Flash Maker Results</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+        <body>
+            <div id="login-home">
+                <form action={{if .LoggedIn}} "/logout" {{else}} "/loginForm" {{end}}
+                    method="get" >
+                    <input type="submit" value=
+                        {{if .LoggedIn}} "Logout" {{else}} "Login" {{end}}>
+                    </input>
+                </form>
+            </div>
+            <div class = "header">
+                <h1>Flash Maker</h1>
+            </div>
+            <div id = "quizlet-link">
+                <a href="https://quizlet.com/"><b>Powered by Quizlet.com</b></a>
+            </div>
+            <div id=container>
+                <div id = "debug">
+                    <h1>Words Entered</h1>
+                    <pre>{{.List}}</pre>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>

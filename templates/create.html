@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0,
+        initial-scale=1.0" />
+        <title>Flash Maker Create</title>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/define.js"></script>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css"/>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <body>
+            <div id="page">
+                <header>
+                    <h1><a href="/">Flash Maker</a></h1>
+                </header>
+                <div id="login-home">
+                    <form action={{if .LoggedIn}} "/logout" {{else}} "/loginForm" {{end}}
+                        method="get" >
+                        <input type="submit" value=
+                            {{if .LoggedIn}} "Logout" {{else}} "Login" {{end}}>
+                        </input>
+                    </form>
+                </div>
+                <div id = "user">
+                    <h1>Logged in as {{.User.UserName}}</h1>
+                </div>
+                <!--
+                <div id ="options">
+                    <form action="/create_text" method="get" >
+                        <input class="button" type="submit" value="Text">
+                        </input>
+                    </form>
+                    <form action="/create_file" method="get" >
+                        <input class="button" type="submit" value="File">
+                        </input>
+                    </form>
+                </div>-->
+
+                <div id = "upload">
+                    <form action="" method="post" >
+                        <textarea id="title" name="title"
+                            placeholder="Title" maxlength="70" ></textarea>
+                        <textarea id="wordbox" name="content"
+                                        placeholder="Enter words here"></textarea>
+                        <input id="file" type="file" name="file" accept="image/*">
+                        <input id="submit" class="button" type="submit"
+                                        value="GENERATE FLASH CARDS">
+                        </input>
+                        <div id="alert"></div>
+                        <div id="loading"></div>
+                        <div id="resp-url">
+                            <a id="resp-link" href="">response</a>
+                        </div>
+                    </form>
+                </div>
+                <div id = "new-set">
+                    <a href="/create">Create Another Set</a>
+                </div>
+                <nav class="nav-site">
+                    <li><a href="/create">Create</a></li>
+                    <li><a href="">Help</a></li>
+                </nav>
+                <footer>
+                    <div id = "quizlet-link">
+                        <a href="https://quizlet.com/"><b>Powered by Quizlet.com</b></a>
+                    </div>
+                </footer>
+            </div>
+        </body>
+    </head>
+</html>

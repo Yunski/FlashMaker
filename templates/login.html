@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0,
+        initial-scale=1.0" />
+        <title>Flash Maker Login</title>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/login.js"></script>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/screen.css"/>
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <h1><a href="/">Flash Maker</a></h1>
+            </header>
+            <div id ="login-form">
+                <form action="/login" method="post" >
+                    <label><span>Quizlet Username</span>
+                    <input type="text" name="user-name" autocomplete="off">
+                    </input>
+                    </label>
+                    <input class="button" type="submit" value="Submit">
+                    </input>
+                </form>
+            </div>
+            <div id="login-home">
+                <form action="/loginForm" method="get" >
+                    <input type="submit" value="Login"></input>
+                </form>
+            </div>
+            <nav class="nav-site">
+                <li><a href="/create">Create</a></li>
+                <li><a href="">Help</a></li>
+            </nav>
+            <footer>
+                <div id = "quizlet-link">
+                    <a href="https://quizlet.com/"><b>Powered by Quizlet.com</b></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

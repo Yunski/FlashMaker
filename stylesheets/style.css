@@ -1,0 +1,330 @@
+body{
+    font-family: arial, sans-serif;
+    margin: 0;
+    background-color: #FF6C0C;
+}
+
+.white-back{
+    background-color: white;
+    /*height: 216px;*/
+}
+
+.white-back>h1{
+    padding: 12px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF6C0C;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.orange-back{
+    background-color: #FF6C0C;
+    text-align: center;
+}
+
+.orange-back>h1{
+    padding: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#login-home{
+    position: absolute;
+    top: 24px;
+    right: 36px;
+}
+
+#login-home input {
+    outline: none;
+    background-color: white;
+    color: #FF6C0C;
+    border: 3px solid #FF6C0C;
+    font-size: 36px;
+}
+
+#login-home input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px #FF6C0C;
+}
+
+#user{
+    position: absolute;
+    top: 72px;
+    right: 36px;
+    font-size: 8px;
+    color: #FF6C0C;
+}
+
+nav.nav-bar {
+    background-color: black;
+    width: 240px;
+    position: fixed;
+}
+
+nav.nav-bar ul {
+    padding: 0;
+}
+
+nav.nav-bar li{
+    list-style: none;
+    width: 100%;
+    padding-top: 30px;
+    /*float: left;*/
+}
+
+nav.nav-bar li a{
+    text-decoration: none;
+    padding: 0.6em;
+    width: 100%;
+    /*display: block;
+    margin-right: 30px;*/
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav.nav-bar .current a {
+
+}
+
+.header{
+    background-color: white;
+    /*height: 216px;*/
+}
+
+.header>h1{
+    margin: 0;
+    padding-top: 72px;
+    text-align: center;
+    vertical-align: middle;
+    /*line-height: 216px;*/
+    font-size: 72px;
+    font-weight: 700;
+    color: #FF6C0C;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#quizlet-link {
+    padding-top: 5px;
+    padding-bottom: 48px;
+    background-color: white;
+    text-align: center;
+}
+
+#quizlet-link a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF6C0C;
+}
+
+#quizlet-link a:hover {
+    text-shadow: 0 0 20px #FF6C0C;
+}
+
+#about{
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: center;
+    font-size: 24px;
+}
+#about>p{
+    color: white;
+}
+
+#about>p>a{
+    color: white;
+}
+
+#social-section{
+  position: relative;
+  padding-bottom: 50px;
+}
+#social-links{
+  margin: 0 auto;
+  text-align: center;
+}
+#social-links a{
+  text-decoration: none;
+  padding: 50px;
+}
+
+#social-links a img{
+  max-width: 700px;
+  width: 100px;
+  height: auto;
+}
+
+#social-links a img:hover{
+  transform: scale(1.2);
+}
+
+#login {
+    padding-top: 100px;
+}
+
+#login form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#login form label span {
+    font-size: 36px;
+    color: white;
+}
+
+#login form input {
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    border: 3px solid white;
+    background-color: #FF6C0C;
+    color: white;
+}
+
+#username{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+#login form input:focus{
+  outline: none;
+  box-shadow: 0 0 20px white;
+}
+
+.button{
+    font-size: 72px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 0 20px white;
+    text-shadow: 0 0 5px white;
+}
+
+#options{
+    padding-top: 100px;
+}
+
+#options form {
+    padding: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#options form input {
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    border: 3px solid white;
+    background-color: #FF6C0C;
+    color: white;
+}
+
+#textarea{
+    padding-top: 12px;
+}
+
+#textarea form{
+    width: 945px;
+    margin: 0 auto;
+}
+
+#textarea input{
+    color: white;
+    font-size: 48px;
+    outline: none;
+    border: 3px solid white;
+    background-color: #FF6C0C;
+    width: 100%;
+}
+
+#file{ font-size: 24px; margin-bottom: 30px; }
+
+#upload{ padding-top: 100px; }
+
+#upload form { max-width: 600px; margin: 0 auto; }
+
+#upload form input {
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    border: 3px solid white;
+    background-color: #FF6C0C;
+    color: white;
+}
+
+#upload form input:focus{
+  outline: none;
+  box-shadow: 0 0 20px white;
+}
+
+#wordbox{
+    outline: none;
+    resize:none;
+    height: 360px;
+    width: 100%;
+    padding: 6px;
+    font-size: 24px;
+    color: #FF6C0C;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:auto;
+}
+
+#submit-button{
+    width: 100%;
+    font-size: 48px;
+    background-color: #1F6DD3;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #1859AB;
+}
+
+#window{
+    padding-top: 20px;
+}
+
+#container{
+    padding: 12px;
+}
+#debug{
+    padding: 6px;
+    height: 500px;
+    width:1024px;
+    background-color: white;
+    color: #FF6C0C;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#debug h1{
+    font-size: 24px;
+}
+
+#debug pre{
+    font-size: 24px;
+}
+
+#alert{
+    height: 500px;
+}
+
+.message{
+    padding: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
